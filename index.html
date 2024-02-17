@@ -1,11 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>P-travel</h1>
+<body class="font-raleway mx-32">
+    <!-- Navbar  -->
+    <section>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="text-4xl font-extrabold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+                
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-[#1DD100]">Bus
+                <img src="./images/bus-icon.png" alt="">
+              </a>
+            </div>
+          </div>
+    </section>
+    <!-- Banner Section -->
+    <section class="mt-9">
+        <div class="hero">
+            <img class="rounded-xl w-full" src="./images/banner.png" alt="">
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-extrabold">End-to-End Travel with <span class="text-[#1DD100]">P Paribahan</span></h1>
+                <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn btn-primary bg-[#1DD100] border-none text-black">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- Discount Section -->
+    <section class="mt-40">
+        <h1 class="text-[40px] font-bold text-center">Best offers for you</h1>
+        <div class="flex gap-6 justify-center w-full">
+            <div class="bg-[#FFBF0F] mt-12 flex rounded-3xl">
+                <div class="p-[52px]">
+                    <h1 class="text-[40px] font-extrabold">15% OFF</h1>
+                    <p class="text-[20px] font-semibold">on your next purchase</p>
+                    <p>use by January 2024</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="220" viewBox="0 0 48 220" fill="none">
+                    <path d="M2.09815e-06 -3.81596e-07C1.82261e-06 3.15172 0.620775 6.27259 1.82689 9.1844C3.033 12.0962 4.80083 14.742 7.02943 16.9706C9.25804 19.1992 11.9038 20.967 14.8156 22.1731C17.7274 23.3792 20.8483 24 24 24C27.1517 24 30.2726 23.3792 33.1844 22.1731C36.0962 20.967 38.742 19.1992 40.9706 16.9706C43.1992 14.742 44.967 12.0962 46.1731 9.1844C47.3792 6.27259 48 3.15173 48 1.90735e-06L2.09815e-06 -3.81596e-07Z" fill="white"/>
+                    <path d="M48 220C48 216.848 47.3792 213.727 46.1731 210.815C44.967 207.904 43.1992 205.258 40.9706 203.029C38.742 200.801 36.0962 199.033 33.1844 197.827C30.2726 196.621 27.1517 196 24 196C20.8483 196 17.7274 196.621 14.8156 197.827C11.9038 199.033 9.25804 200.801 7.02944 203.029C4.80083 205.258 3.033 207.904 1.82689 210.815C0.620778 213.727 -2.75532e-07 216.848 0 220L48 220Z" fill="white"/>
+                    <line x1="25" y1="32" x2="25" y2="188" stroke="white" stroke-width="2" stroke-dasharray="5 5"/>
+                </svg>
+                <div class="p-[52px]">
+                    <h1 class="text-[32px] font-bold">NEW15</h1>
+                    <h3 class="text-[20px] font-medium text-[#03071240]">Coupon Code</h3>
+                </div>
+            </div>
+            <div class="bg-[#F78C9C] mt-12 flex rounded-3xl">
+                <div class="p-[52px]">
+                    <h1 class="text-[40px] font-extrabold">20% OFFF</h1>
+                    <p class="text-[20px] font-semibold">on your next purchase</p>
+                    <p>use by January 2024</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="220" viewBox="0 0 48 220" fill="none">
+                    <path d="M2.09815e-06 -3.81596e-07C1.82261e-06 3.15172 0.620775 6.27259 1.82689 9.1844C3.033 12.0962 4.80083 14.742 7.02943 16.9706C9.25804 19.1992 11.9038 20.967 14.8156 22.1731C17.7274 23.3792 20.8483 24 24 24C27.1517 24 30.2726 23.3792 33.1844 22.1731C36.0962 20.967 38.742 19.1992 40.9706 16.9706C43.1992 14.742 44.967 12.0962 46.1731 9.1844C47.3792 6.27259 48 3.15173 48 1.90735e-06L2.09815e-06 -3.81596e-07Z" fill="white"/>
+                    <path d="M48 220C48 216.848 47.3792 213.727 46.1731 210.815C44.967 207.904 43.1992 205.258 40.9706 203.029C38.742 200.801 36.0962 199.033 33.1844 197.827C30.2726 196.621 27.1517 196 24 196C20.8483 196 17.7274 196.621 14.8156 197.827C11.9038 199.033 9.25804 200.801 7.02944 203.029C4.80083 205.258 3.033 207.904 1.82689 210.815C0.620778 213.727 -2.75532e-07 216.848 0 220L48 220Z" fill="white"/>
+                    <line x1="25" y1="32" x2="25" y2="188" stroke="white" stroke-width="2" stroke-dasharray="5 5"/>
+                    </svg>
+                <div class="p-[52px]">
+                    <h1 class="text-[32px] font-bold">Couple 20</h1>
+                    <h3 class="text-[20px] font-medium text-[#03071240]">Coupon Code</h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="btn text-[#1DD100] mt-16 border-[#1DD100] rounded-xl text-xl">See All Offers</button>
+        </div>
+    </section>
+    <!-- Ticket Section -->
+    <section class="mt-28 bg-[#F7F8F8] rounded-t-[88px] border-t-4 border-t-[#1DD100] py-28 px-36 justify-center">
+        <h1 class="text-[40px] font-bold text-center">P.H Paribahan</h1>
+        <p class="text-lg text-center">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+        <div class=" pr-8 mt-8 flex justify-center items-center ">
+            <div>
+                <div class="flex gap-9">
+                    <div class=" flex mr-2">
+                        <img class="mr-2" src="./images/bus-logo.png" alt="">
+                        <div>
+                            <h2 class="text-[32px] font-bold mr-[230px]">Greenline Paribahan</h2>
+                            <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                        <div class="flex bg-[#1DD10015] rounded-xl w-44 justify-center items-center gap-3">
+                            <img src="./images/seat-green.png" alt="">
+                            <h2 class="text-lg font-medium text-[#1DD100]"><span>40</span> Seats left</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 bg-[#F7F8F8] rounded-3xl p-8">
+                    <div class="flex justify-between">
+                        <p>Route</p>
+                        <p class="font-semibold">Dhaka - Sylhet</p>
+                    </div>
+                    <div>
+                        <input class="w-full h-[50px] rounded-xl border-dotted border-b-4 bg-[#F7F8F8]" type="text">
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <p>Departure Time</p>
+                        <p class="font-semibold">9:00 PM</p>
+                    </div>
+                    <div>
+                        <input class="w-full h-[50px] rounded-xl border-dotted border-b-4 bg-[#F7F8F8]" type="text">
+                    </div>
+                    <div class="mt-6 flex gap-6">
+                        <div class="bg-gray-200 w-[240px] rounded-xl p-5 text-center">
+                            <h2 class="font-medium">Boarding Point - Laxmipur</h2>
+                        </div>
+                        <div class="bg-gray-200 w-[240px] rounded-xl p-5 text-center">
+                            <h2 class="font-medium">Dropping Point - Bogura</h2>
+                        </div>
+                        <div class="bg-gray-200 w-[240px] rounded-xl p-5 text-center">
+                            <h2 class="font-medium">Est. Time - 11 Hour</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img  src="./images/info-devider.png" alt="">
+            <div class="text-center flex flex-col">
+                <img src="./images/fare.png" alt="">
+                <h2 class="text-[32px] font-bold">550 Taka</h2>
+                <h3 class="text-2xl font-semibold">Per Seat</h3>
+            </div>
+        </div>
+        <div class=" mt-7 p-8 bg-white  flex justify-between rounded-xl">
+            <div>
+                <p class="text-2xl font-semibold">Select Your Seat</p>
+                <hr width="100%" />
+                <div class="flex gap-[380px]">
+                    <div class="mt-10 flex gap-3">
+                        <img src="./images/seat-gray.png" alt="">
+                        <p class="font-medium">Available</p>
+                    </div>
+                    <div class="mt-10 flex gap-3">
+                        <img src="./images/seat-green.png" alt="">
+                        <p class="font-medium">Selected</p>
+                    </div>
+                </div>
+                <hr width="100%" class="mt-4"/>
+                <div>
+                    <div class="flex justify-end mb-6">
+                        <div class=" mt-4 bg-[#0307121A] w-[110px] rounded-xl h-[56px] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333" stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class=" grid grid-cols-5 gap-4 justify-center items-center text-center">
+                        A
+                        <div class="bg-gray-200 p-4 rounded-xl">A1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">A2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">A3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">A4</div>
+                        B
+                        <div class="bg-gray-200 p-4 rounded-xl">B1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">B2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">B3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">B4</div>
+                        C
+                        <div class="bg-gray-200 p-4 rounded-xl">C1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">C2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">C3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">C4</div>
+                        D
+                        <div class="bg-gray-200 p-4 rounded-xl">D1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">D2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">D3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">D4</div>
+                        E
+                        <div class="bg-gray-200 p-4 rounded-xl">E1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">E2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">E3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">E4</div>
+                        F
+                        <div class="bg-gray-200 p-4 rounded-xl">F1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">F2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">F3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">F4</div>
+                        G
+                        <div class="bg-gray-200 p-4 rounded-xl">G1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">G2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">G3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">G4</div>
+                        H
+                        <div class="bg-gray-200 p-4 rounded-xl">H1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">H2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">H3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">H4</div>
+                        I
+                        <div class="bg-gray-200 p-4 rounded-xl">I1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">I2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">I3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">I4</div>
+                        J
+                        <div class="bg-gray-200 p-4 rounded-xl">J1</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">J2</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">J3</div>
+                        <div class="bg-gray-200 p-4 rounded-xl">J4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lineusingborder"></div>
+            <div>
+                <p class="text-2xl font-semibold">Select Your Seat</p>
+                <hr width="100%" class="my-6"/>
+                <div class="grid grid-cols-3 gap-12">
+                    <p>Seat</p>
+                    <p>class</p>
+                    <p>price</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
