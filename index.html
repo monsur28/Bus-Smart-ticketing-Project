@@ -97,7 +97,7 @@
         </div>
     </section>
     <!-- Ticket Section -->
-    <section class="mt-28 bg-[#F7F8F8] rounded-t-[88px] border-t-4 border-t-[#1DD100] py-28 px-36 justify-center">
+    <section class="max-w-screen mt-28 bg-[#F7F8F8] rounded-t-[88px] border-t-4 border-t-[#1DD100] py-28 px-36 justify-center">
         <h1 class="text-[40px] font-bold text-center">P.H Paribahan</h1>
         <p class="text-lg text-center">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
         <div class=" pr-8 mt-8 flex justify-center items-center ">
@@ -239,8 +239,55 @@
                 <hr width="100%" class="my-6"/>
                 <div class="grid grid-cols-3 gap-16">
                 </div>
-            </div>
-        </div>
+                <div>
+                    <hr width="100%" class="my-6"/>
+                    <div class="flex justify-between font-medium">
+                        <p>Total</p> <p>BDT <span>1100</span></p>
+                    </div>
+                    <div class="mt-4 rounded">
+                        <div class="relative">
+                            <input type="text" id="couponInput" class=" w-full py-2 px-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="Enter coupon code">
+                            <button class="absolute right-0 top-0 bottom-0 px-3 bg-[#1DD100] text-white rounded-r-lg hover:bg-[#1DD10050] hover:text-black focus:outline-none" onclick="validateCoupon()">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <form action="">
+                            <div>
+                                <label class="font-semibold" for="">Passenger Name*</label><br>
+                                <input class="p-5 mt-2 w-full border-2 border-[#0307121A] rounded-xl" type="text" name="" id="" placeholder="Enter your name"><br>
+                            </div>
+                            <div class="mt-6">
+                                <label class="font-semibold" for="">Phone Number*</label><br>
+                                <input class="p-5 mt-2 w-full border-2 border-[#0307121A] rounded-xl" type="number" name="" id="" placeholder="Enter your phone number"><br>
+                            </div>
+                            <div class="mt-6">
+                                <label class="font-semibold" for="">Email ID</label><br>
+                                <input class="p-5 mt-2 w-full border-2 border-[#0307121A] rounded-xl" type="number" name="" id="" placeholder="Enter your email id"><br>
+                            </div>
+                            <div class="mt-6">
+                                <label for="my_modal_7" class="btn bg-[#1DD100] w-full">Next</label>
+                                <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                                <div class="modal" role="dialog">
+                                    <div class="modal-box text-center">
+                                        <div class="flex justify-center items-center mb-2">
+                                            <img src="./images/success.png" alt="">
+                                        </div>
+                                        <h3 class="text-lg font-bold">SUCCESS</h3>
+                                        <p class="py-4 font-medium">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </p>
+                                        <p>Shortly you will find a confirmation in your email.</p>
+                                        <div class="modal-action flex justify-center items-center">
+                                            <form method="dialog">
+                                                <button class="btn bg-[#27AE60] text-white">Continue</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </section>
     <!-- Footer Section -->
     <footer class="footer p-10 bg-neutral text-neutral-content bg-[#030712] justify-between">
