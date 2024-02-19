@@ -81,12 +81,16 @@ discountBtn.addEventListener("click", function () {
     const selectedContainer = document.getElementById("coupon-applied");
       const li = document.createElement("li");
       const p = document.createElement("p");
-      p.style.fontFamily.bold;
+      p.style.fontSize=('16px');
+      p.style.fontWeight=('bold');
+      p.style.font = ('green')
       p.innerText = "Discount";
       const p2 = document.createElement("p");
       p2.innerText ="BDT " + discount;
+      p2.style.fontSize=('16px');
+      p2.style.fontWeight=('bold');
       li.appendChild(p);
-      li.appendChild(p2);      
+      li.appendChild(p2);    
       li.className = "flex justify-between w-full text-left mb-4";
       selectedContainer.appendChild(li);
 
